@@ -9,19 +9,12 @@ export default class Math extends Character {
     return this.isStoned;
   }
 
-  set attackLevel(square) {
+  get attackLevel() {
     this.attack -= (square * 0.1 - 0.1) * this.attack;
 
     if (this.stoned === true) {
       this.attack -= Math.round(Math.log2(square)) * 5;
     }
-
-    if (this.attack < 0) {
-      this.attack = 0;
-    }
-  }
-
-  get attackLevel() {
     return this.attack;
   }
 }
