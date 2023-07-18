@@ -8,6 +8,11 @@ export default class Math extends Character {
   get stoned() {
     return this.isStoned;
   }
+  set attackLevel(square) {
+    if (this.attack < 0) {
+      this.attack = 0;
+    }
+  }
 
   get attackLevel() {
     this.attack -= (square * 0.1 - 0.1) * this.attack;
