@@ -6,6 +6,7 @@
       "browser": true,
       "jest": true
     },
+    "parser": "@babel/eslint-parser",
     "rules": {
       "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
       "prettier/prettier": ["error", { "endOfLine": "auto" }],
