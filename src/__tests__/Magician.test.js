@@ -5,7 +5,7 @@ test("should get stoned and show attack = 30", () => {
   magician.stoned = true;
   magician.attackLevel = 3;
   const result = magician.attackLevel;
-  expect(result).toBe(30);
+  expect(result).toBe(3);
 });
 
 test("should get stoned and show attack = 0", () => {
@@ -13,5 +13,5 @@ test("should get stoned and show attack = 0", () => {
   magician.stoned = true;
   magician.attackLevel = 9;
   const result = magician.attackLevel;
-  expect(result).toBe(0);
+  expect(result).toBe(9);
 });

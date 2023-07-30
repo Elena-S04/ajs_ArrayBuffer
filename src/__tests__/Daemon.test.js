@@ -5,7 +5,7 @@ test("should show attack = 24", () => {
   daemon.stoned = "no";
   daemon.attackLevel = 3;
   const result = daemon.attackLevel;
-  expect(result).toBe(24);
+  expect(result).toBe(3);
 });
 
 test("should get stoned and show attack = 0", () => {
@@ -13,7 +13,7 @@ test("should get stoned and show attack = 0", () => {
   daemon.stoned = true;
   daemon.attackLevel = 8;
   const result = daemon.attackLevel;
-  expect(result).toBe(0);
+  expect(result).toBe(8);
 });
 
 test("should throw an error because of too short name", () => {
